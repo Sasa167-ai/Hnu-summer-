@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نتيجة الفصل الصيفي - HNU</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
+  :root{
+    --ink:#1b2a22;
+    --paper:#f6f4ee;
+    --card:#ffffff;
+    --line:#e2ded2;
+    --moss:#3f6b4f;
+    --moss-soft:#e5efe6;
+    --amber:#a97a2f;
+    --amber-soft:#f4ead9;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    font-family:'Cairo',sans-serif;
+    color:var(--ink);
+    padding:40px 16px;
+  }
+
+  .sheet{
+    max-width:760px;
+    margin:0 auto;
+  }
+
+  .header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    border-bottom:3px solid var(--ink);
+    padding-bottom:18px;
+    margin-bottom:8px;
+  }
+
+  .header h1{
+    font-size:32px;
+    font-weight:800;
+    margin:0;
+    letter-spacing:-0.5px;
+  }
+
+  .header .uni{
+    font-size:14px;
+    color:#6b6355;
+    margin-top:6px;
+  }
+
+  .meta{
+    text-align:left;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px;
+    color:#6b6355;
+  }
+
+  .status-pill{
+    display:inline-block;
+    margin-top:6px;
+    background:var(--moss-soft);
+    color:var(--moss);
+    font-weight:600;
+    font-size:12px;
+    padding:4px 12px;
+    border-radius:20px;
+  }
+
+  .summary-row{
+    display:flex;
+    gap:14px;
+    margin:24px 0 30px;
+  }
+
+  .stat{
+    flex:1;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:14px 16px;
+  }
+
+  .stat .num{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:24px;
+    font-weight:600;
+  }
+
+  .stat .lbl{
+    font-size:12px;
+    color:#6b6355;
+    margin-top:2px;
+  }
+
+  table{
+    width:100%;
+    border-collapse:collapse;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:10px;
+    overflow:hidden;
+  }
+
+  thead th{
+    text-align:right;
+    font-size:12px;
+    font-weight:700;
+    color:#6b6355;
+    padding:14px 16px;
+    border-bottom:1px solid var(--line);
+    background:#faf9f5;
+  }
+
+  thead th:nth-child(2),
+  thead th:nth-child(3),
+  thead th:nth-child(4),
+  thead th:nth-child(6){
+    text-align:center;
+  }
+
+  tbody td{
+    padding:16px;
+    border-bottom:1px solid var(--line);
+    font-size:14px;
+    vertical-align:middle;
+  }
+
+  tbody tr:last-child td{border-bottom:none;}
+
+  .course-name{font-weight:600;}
+  .course-code{
+    display:block;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    color:#9a917f;
+    margin-top:3px;
+  }
+
+  td.center{text-align:center;font-family:'IBM Plex Mono',monospace;}
+
+  .grade{
+    display:inline-block;
+    padding:3px 12px;
+    border-radius:20px;
+    font-weight:700;
+    font-size:13px;
+  }
+  .grade.a{background:var(--moss-soft);color:var(--moss);}
+  .grade.b{background:var(--moss-soft);color:var(--moss);}
+  .grade.c{background:var(--amber-soft);color:var(--amber);}
+
+  .pass{
+    display:inline-block;
+    background:var(--moss-soft);
+    color:var(--moss);
+    font-weight:600;
+    font-size:12px;
+    padding:4px 12px;
+    border-radius:20px;
+  }
+
+  footer{
+    margin-top:24px;
+    font-size:12px;
+    color:#9a917f;
+    text-align:center;
+  }
+
+  @media(max-width:520px){
+    thead{display:none;}
+    tbody tr{
+      display:block;
+      padding:14px 16px;
+      border-bottom:1px solid var(--line);
+    }
+    tbody td{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border:none;
+      padding:6px 0;
+      font-size:13px;
+    }
+    tbody td:first-child{display:block;padding-bottom:10px;}
+    tbody td:not(:first-child)::before{
+      content: attr(data-label);
+      color:#9a917f;
+      font-size:12px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="sheet">
+
+    <div class="header">
+      <div>
+        <h1>الفصل الصيفي</h1>
+        <div class="uni">جامعة النهضة ببني سويف · HNU</div>
+      </div>
+      <div class="meta">
+        2025 / 2026
+        <div class="status-pill">تم اعتماد النتيجة</div>
+      </div>
+    </div>
+
+    <div class="summary-row">
+      <div class="stat">
+        <div class="num">6</div>
+        <div class="lbl">إجمالي الساعات المعتمدة</div>
+      </div>
+      <div class="stat">
+        <div class="num">3</div>
+        <div class="lbl">عدد المقررات</div>
+      </div>
+      <div class="stat">
+        <div class="num">7.0</div>
+        <div class="lbl">إجمالي النقاط</div>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>المقرر</th>
+          <th>الساعات</th>
+          <th>الدرجة</th>
+          <th>التقدير</th>
+          <th>النقاط</th>
+          <th>الحالة</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="course-name">إحصاء ونظرية الاحتمالات</span>
+            <span class="course-code">GEN113</span>
+          </td>
+          <td class="center" data-label="الساعات">2</td>
+          <td class="center" data-label="الدرجة">68.0</td>
+          <td data-label="التقدير"><span class="grade a">C+</span></td>
+          <td class="center" data-label="النقاط">2.3</td>
+          <td data-label="الحالة"><span class="pass">ناجح</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="course-name">فيزياء الكم</span>
+            <span class="course-code">GEN123</span>
+          </td>
+          <td class="center" data-label="الساعات">2</td>
+          <td class="center" data-label="الدرجة">64.0</td>
+          <td data-label="التقدير"><span class="grade c">C</span></td>
+          <td class="center" data-label="النقاط">2.0</td>
+          <td data-label="الحالة"><span class="pass">ناجح</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="course-name">الابتكار وريادة الأعمال</span>
+            <span class="course-code">GEN261</span>
+          </td>
+          <td class="center" data-label="الساعات">2</td>
+          <td class="center" data-label="الدرجة">73.0</td>
+          <td data-label="التقدير"><span class="grade b">B-</span></td>
+          <td class="center" data-label="النقاط">2.7</td>
+          <td data-label="الحالة"><span class="pass">ناجح</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <footer>تم إنشاء هذه الصفحة من نتيجة الفصل الصيفي 2025/2026</footer>
+  </div>
+</body>
+</html>
